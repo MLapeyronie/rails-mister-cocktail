@@ -2,5 +2,11 @@
 @import "home";
 
 .container {
-  width: 450px;
+  width: 650px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
