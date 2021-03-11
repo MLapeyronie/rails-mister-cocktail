@@ -1,28 +1,29 @@
+<div class="cocktail-container">
+  <div class="container">
+    <h1>Cocktail recipe 🌱</h1>
+
+    <div class="cocktail-card">
+      <ul>
+      <h3><%= @cocktail.name %></h3>
+      <% @cocktail.doses.each do |dose| %>
+      <li>
+        <%= dose.description %>
+        <%= dose.ingredient.name %>
+        <%= link_to "🗑",dose_path(dose), method: :delete,
+        data: { confirm: "Are you sure?" } %>
+      </li>
+      <% end %>
+    </ul>
+    </div>
 
 
-<div class="container">
-  <h1>Cocktail recipe 🌱</h1>
-
-  <div class="card">
-    <ul>
-    <h3><%= @cocktail.name %></h3>
-    <% @cocktail.doses.each do |dose| %>
-    <li>
-      <%= dose.description %>
-      <%= dose.ingredient.name %>
-      <%= link_to "🗑",dose_path(dose), method: :delete,
-      data: { confirm: "Are you sure?" } %>
-    </li>
-    <% end %>
-  </ul>
+    <div class="all-links">
+      <%= link_to "Back to Cocktails list", cocktails_path%>
+      <%= link_to "Add new dose", new_cocktail_dose_path(@cocktail)  %>
+      <%= link_to 'Delete cocktail', cocktail_path(@cocktail), method: :delete,
+        data: { confirm: "Are you sure?" } %>
+    </div>
   </div>
-
-
-  <%= link_to "Back to Cocktails list", cocktails_path%>
-  <%= link_to "Add new dose", new_cocktail_dose_path(@cocktail)  %>
-  <%= link_to 'Delete cocktail', cocktail_path(@cocktail), method: :delete,
-    data: { confirm: "Are you sure?" } %>
-
 </div>
 
 

@@ -1,12 +1,62 @@
 // Import page-specific CSS files here.
 @import "home";
 
+body {
+  background-color: #B8A199;
+}
 .container {
-  width: 650px;
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 30Px;
+  padding: 29px;
+  width: 40%;
+  margin-bottom: 30px;
+  box-shadow: 4px 4px 10px grey;
+  h1 {
+    color: black;
+    text-align: center;
+  }
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+.container-cocktails {
+  display: flex;
+  justify-content: space-around;
 }
+
+.container-title {
+    text-align: center;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 12px;
+    width: 20%;
+    box-shadow: 4px 4px 10px grey;
+
+}
+
+#img-cocktail {
+    height: 48vh;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+.card-title {
+  margin-top: 20px;
+  a {
+    color: gray;
+  }
+}
+
+.add-cocktail {
+  a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+
+  }
+}
+

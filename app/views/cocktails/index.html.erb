@@ -1,17 +1,20 @@
-<div class="Title">
+
+<div class="container">
   <h1>My Cocktails ! 🍸 </h1>
-  <div class="cards">
-    <% @cocktails.each do |cocktail| %>
-    <div class="card">
-        <h3 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
-    </div>
-    <% end %>
+</div>
+  <div class="add-cocktail">
+    <p><%= link_to ' ➕ Add a new cocktail', new_cocktail_path %></p>
   </div>
 
-
-
-  <p><%= link_to 'Add a cocktail', new_cocktail_path %></p>
-
+<div class="container-cocktails">
+  <% @cocktails.each do |cocktail| %>
+    <div class="container-title">
+      <img id="img-cocktail" src="https://source.unsplash.com/user/erondu" alt="">
+      <h3 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+    </div>
+  <% end %>
 </div>
+
+
 
 

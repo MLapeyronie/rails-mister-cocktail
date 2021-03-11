@@ -1,0 +1,41 @@
+.cocktail-container {
+  container {
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 30Px;
+  padding: 29px;
+  width: 40%;
+  margin-bottom: 30px;
+  box-shadow: 4px 4px 10px grey;
+  }
+}
+
+.cocktail-card {
+  h3 {
+    text-align: center;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+.all-links {
+  justify-content: space-around;
+  display: flex;
+  a {
+    color: gray;
+  }
+  .new-dose {
+    .btn{
+      input {
+      background-color: #b8a199;
+      border-radius: 15px;
+      padding: 6px 11px;
+      border-color: #b8a199;
+      border-style: none;
+      margin-top: 20px;
+  }
+}
+  }
+}
