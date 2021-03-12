@@ -1,1 +1,26 @@
 // Specific CSS for your home-page
+.home {
+  background-color: #123334;
+}
+
+.container-home {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  h3 {
+    a {
+      color: white;
+      border: solid 1px white;
+      background-color: #123334;
+      border-radius: 12px;
+      width: 26%;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

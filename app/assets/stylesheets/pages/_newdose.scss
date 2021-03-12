@@ -1,10 +1,27 @@
+.container-new-dose {
+  border: solid 1px white;
+  background-color: #123334;
+  text-align: center;
+  margin: 30px auto 30px;
+  border-radius: 10px;
+  padding: 18px;
+  width: 35%;
+  box-shadow: 0px 1px 10px #0c0c0c;
+  h1 {
+    margin-bottom: 25px;
+    color: white;
+  }
+  label {
+    color: white;
+  }
+}
+
 .btn{
   input {
-  background-color: #b8a199;
-  border-radius: 15px;
-  padding: 6px 11px;
-  border-color: #b8a199;
-  border-style: none;
-  margin-top: 20px;
+    background-color: #123334;
+    border-radius: 15px;
+    padding: 6px 11px;
+    border: solid 1px white;
+    color: white;
   }
 }
