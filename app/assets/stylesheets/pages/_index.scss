@@ -2,50 +2,61 @@
 @import "home";
 
 body {
-  background-color: #B8A199;
+  background-color: #123334;
 }
 .container {
   text-align: center;
   background-color: white;
   margin-top: 20px;
-  border-radius: 30Px;
+  border-radius: 10px;
   padding: 29px;
   width: 40%;
   margin-bottom: 30px;
-  box-shadow: 4px 4px 10px grey;
+  box-shadow: 0px 1px 10px #0c0c0c;
   h1 {
-    color: black;
+    color: #123334;
     text-align: center;
   }
 }
 
 .container-cocktails {
-  display: flex;
-  justify-content: space-around;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 10px;
+  row-gap: 30px;
+  place-self: center;
+
 }
 
 .container-title {
     text-align: center;
     background-color: white;
-    margin-top: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 12px;
-    width: 20%;
-    box-shadow: 4px 4px 10px grey;
+    width: 67%;
+    box-shadow: 0px 1px 10px #0c0c0c;
+    margin: 0 19%;
 
 }
 
 #img-cocktail {
     height: 48vh;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     object-fit: cover;
   }
 
 .card-title {
   margin-top: 20px;
+  text-align: left;
   a {
-    color: gray;
+    color: #123334;
+    a:hover {
+      text-decoration: none;
+      color: #123334;
+    }
   }
 }
 
