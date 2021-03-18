@@ -1,8 +1,4 @@
 // Specific CSS for your home-page
-.home {
-  background-color: #123334;
-}
-
 .container-home {
   display: flex;
   justify-content: center;
@@ -11,10 +7,10 @@
     a {
       color: white;
       border: solid 1px white;
-      background-color: #123334;
-      border-radius: 12px;
+      // background-color: #262626;
+      border-radius: 5px;
       width: 26%;
-      padding: 12px;
+      padding: 29px;
       text-align: center;
       text-decoration: none;
       a:hover {
